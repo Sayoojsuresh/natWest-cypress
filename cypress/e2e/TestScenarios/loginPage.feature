@@ -6,7 +6,7 @@ Background:
 
 
 Scenario Outline: Login to the site with different User
-    Given user login to the site with user "standardUser"
+    Given user login to the site with user "<User>"
     And User add the three products to cart
     |producttitle|
     |Sauce Labs Backpack|
