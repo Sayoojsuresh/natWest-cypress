@@ -1,0 +1,34 @@
+{
+  "name": "natwest-cypress",
+  "version": "1.0.0",
+  "description": "End to end journey saucedemo webpage",
+  "main": "index.js",
+  "scripts": {
+    "integrationTests": "node cypress-runner.js"
+  },
+  "author": "Sayooj_S",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "e2e",
+    "nonGlobalStepDefinition": "true",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "results/cuke-reports",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "cucumber-html-reporter": "^5.2.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress":"12.17.4",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0"
+  },
+  "compilerOptions": {
+    "lib": [
+      "ES2018"
+    ],
+    "target": "ES2018"
+  }
+}
